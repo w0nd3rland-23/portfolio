@@ -138,6 +138,7 @@ ul, li {
         left: 0; /* Align to the left */
         right: 0; /* Stretch to the right */
         background-color: #fff; /* Background for dropdown */
+        padding: 20px;
         z-index: 10; /* Ensure links are above other content */
     }
 
@@ -260,7 +261,6 @@ ul, li {
     }
 }
 
-
 /* General Styling for Hero Section */
 .hero-section {
     position: relative;
@@ -270,6 +270,8 @@ ul, li {
     align-items: center; /* Vertically centers the content */
     justify-content: center; /* Horizontally centers the content */
     overflow: hidden;
+    padding: 20px; /* Add padding */
+    flex-wrap: wrap; 
 }
 
 /* Container for the Hero Image */
@@ -293,12 +295,14 @@ ul, li {
 /* Content Container */
 .hero-content {
     display: flex;
+    flex: 1; /* Allow this to grow */
     align-items: center;
     gap: 100px; /* Space between text and headshot */
     max-width: 1200px;
-    width: 90%;
     padding: 20px;
     z-index: 1; /* Ensures the content is above the image */
+    flex-direction: row; /* Keep text and headshot in a row for desktop */
+    align-items: flex-start; /* Align items to the top */
 }
 
 /* Text Container */
@@ -328,6 +332,30 @@ ul, li {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for depth */
     object-fit: cover; /* Ensures the image fits inside the circle */
     border: 4px solid #ffffff; /* White border around the headshot */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto; /* Allow section to adjust height */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .hero-content {
+        flex-direction: column; /* Stack text and headshot in column */
+        align-items: center; /* Center items */
+        text-align: center; /* Center text */
+        gap: 20px; /* Add gap between text and headshot */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .headshot-image {
+        width: 80px; /* Adjust size for mobile */
+        height: 80px; /* Maintain aspect ratio */
+        margin-top: 10px; /* Less space above headshot */
+        margin-left: 0; /* Reset margin for mobile */
+    }
 }
 
 /* Projects Section Styles */
