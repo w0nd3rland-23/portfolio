@@ -8,6 +8,9 @@
     --font-size-medium: 1rem;
     --font-family: "Open Sans", sans-serif;
 }
+
+
+
 .link-tree-nav {
     text-align: center; /* Center align the navigation */
     margin: 20px 0; /* Add some space above and below */
@@ -130,7 +133,7 @@ ul, li {
     font-size: 1.75rem; /* Larger font for the name */
     color: var(--primary-color);
     font-family: "Figtree" !important;
-    margin-left: 2rem; 
+   
 }
 
 
@@ -508,3 +511,48 @@ ul, li {
 }
 
 
+/* CTA Section Styles */
+.cta {
+    text-align: center; /* Center align the text */
+    padding: 2rem 1rem; /* Add padding for spacing */
+    
+    
+    margin: 2rem auto; /* Margin around the section */
+    max-width: 800px; /* Max width to prevent it from stretching too wide */
+}
+
+
+
+.cta p {
+    font-family: var(--font-family); /* Use defined font */
+    font-size: var(--font-size-medium); /* Font size for paragraph */
+    color: var(--text-color); /* Use text color */
+    line-height: 1.6; /* Line height for readability */
+    margin-bottom: 2rem; /* Space below the paragraph */
+}
+
+/* CTA Buttons Container */
+.cta-buttons {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center buttons */
+    gap: 1rem; /* Space between buttons */
+}
+
+/* Button Styles */
+.btn {
+    padding: 0.75rem 1.25rem; /* Padding for buttons */
+    background-color: var(--primary-color); /* Background color */
+    color: #fff; /* Text color */
+    border-radius: var(--button-radius); /* Use defined border radius */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Transition effects */
+    font-family: var(--font-family); /* Use defined font */
+    font-size: var(--font-size-medium); /* Font size for buttons */
+}
+
+/* Button Hover Effect */
+.btn:hover {
+    background-color: var(--primary-hover); /* Change background on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}

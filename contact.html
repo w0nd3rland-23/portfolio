@@ -6,33 +6,27 @@
     <title>UX/UI Design Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div> <!-- Name added here -->
+        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
         <ul>
-            
             <li><a href="about.html">About</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="contact.html" class="contact-btn">Contact</a></li>
         </ul>
     </div>
 
-
     <!-- Contact Section -->
     <section class="contact">
         <h2>Get in Touch</h2>
-        <form action="submit-form.php" method="POST">
+        <form id="contact-form">
             <div class="form-group">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -53,6 +47,38 @@
         </form>
     </section>
 
+    <!-- EmailJS Initialization -->
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("PYg_YhfZWLKNq8aIm"); // Replace 'public_PYg_YhfZWLKNq8aIm' with your Public Key
+        })();
+    </script>
+
+    <!-- Form Submission Script -->
+    <script type="text/javascript">
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contact-form');
+
+            form.addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Use EmailJS to send the form data
+                emailjs.sendForm('service_qk5cgi8', 'template_uirpsgr', this)
+                    .then(function(response) {
+                        alert('Message sent successfully!');
+                        console.log('SUCCESS!', response.status, response.text);
+
+                        // Clear the form after successful submission
+                        form.reset();
+                    }, function(error) {
+                        alert('Failed to send the message. Please try again.');
+                        console.log('FAILED...', error);
+                    });
+            });
+        });
+    </script>
+
+    <!-- Footer -->
     <footer class="footer">
         <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
             <!-- LinkedIn Link -->
@@ -61,7 +87,7 @@
                     <path d="M22.225 0H1.775C.795 0 0 .795 0 1.775v20.45C0 23.205.795 24 1.775 24h20.45C23.205 24 24 23.205 24 22.225V1.775C24 .795 23.205 0 22.225 0zM7.1 20.452H3.75V9h3.35v11.452zm-1.675-13.064c-1.069 0-1.725-.735-1.725-1.65 0-.933.675-1.65 1.725-1.65s1.725.717 1.725 1.65c0 .915-.675 1.65-1.725 1.65zm15.477 13.064h-3.35v-5.5c0-1.314-.025-3.014-1.835-3.014-1.835 0-2.115 1.43-2.115 2.92v5.594h-3.35V9h3.215v1.57h.045c.445-.84 1.537-1.73 3.17-1.73 3.395 0 4.025 2.234 4.025 5.128v5.482h-.002z" fill="#000"/>
                 </svg>
             </a>
-    
+
             <!-- Instagram Link -->
             <a href="https://www.instagram.com/alicebeyerdesign/" target="_blank" class="social-link">
                 <img src="img/instagram.png" alt="Instagram" width="35" height="35"/>
@@ -69,4 +95,5 @@
         </div>
         <p>&copy; 2024 Alice Beyer Design Portfolio</p>
     </footer>
-    
+</body>
+</html>
