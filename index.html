@@ -18,14 +18,17 @@
 </head>
 <body>
     <div class="navbar">
-        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div> <!-- Name added here -->
-        <button class="toggle-button" onclick="toggleNav()">☰</button>sss
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
+    
 
     <section class="hero-section">
         <!-- Background Image for Hero Section -->
@@ -96,7 +99,12 @@
 <script> function toggleNav() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active'); // Toggle the 'active' class
-}</script>
+}
+
+</script>
+
+
+
 <footer class="footer">
     <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
         <!-- LinkedIn Link -->

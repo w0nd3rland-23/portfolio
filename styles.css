@@ -96,6 +96,67 @@ ul, li {
 *::after {
     box-sizing: border-box;
 }
+
+
+/* Basic Navbar Styles */
+.navbar {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out items */
+    align-items: center; /* Center items vertically */
+    padding: 10px 20px; /* Add padding */
+    background-color: #fff; /* Change background color as needed */
+}
+
+/* Hide the toggle button by default */
+.toggle-button {
+    display: none; /* Initially hide the toggle button */
+}
+
+/* Navigation Links */
+.nav-links ul {
+    list-style: none; /* Remove default list styling */
+    display: flex; /* Flexbox layout for nav links */
+    gap: 20px; /* Space between links */
+}
+
+/* Show the toggle button only on mobile screens */
+@media (max-width: 768px) {
+    .toggle-button {
+        display: block; /* Show toggle button on mobile */
+        background: none; /* Remove default button styling */
+        border: none; /* Remove default border */
+        font-size: 24px; /* Adjust font size */
+        cursor: pointer; /* Change cursor to pointer */
+        color: #000; /* Adjust color */
+    }
+    
+    .nav-links {
+        display: none; /* Hide nav links on mobile by default */
+        flex-direction: column; /* Stack links vertically */
+        position: absolute; /* Position links absolutely */
+        top: 50px; /* Adjust according to navbar height */
+        left: 0; /* Align to the left */
+        right: 0; /* Stretch to the right */
+        background-color: #fff; /* Background for dropdown */
+        z-index: 10; /* Ensure links are above other content */
+    }
+
+    .nav-links.active {
+        display: flex; /* Show nav links when active */
+    }
+}
+
+/* For larger screens, show the nav links normally */
+@media (min-width: 769px) {
+    .nav-links {
+        display: flex; /* Use flexbox to layout links */
+    }
+
+    .toggle-button {
+        display: none; /* Hide toggle button on larger screens */
+    }
+}
+
 /* Navbar Styles */
 .navbar {
     display: flex;
