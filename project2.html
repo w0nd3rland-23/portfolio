@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UX/UI Design Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+       <!-- Navbar -->
+       <div class="navbar">
+        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div> <!-- Name added here -->
+        <ul>
+           
+            <li><a href="about.html">About</a></li>
+            <li><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html" class="contact-btn">Contact</a></li>
+        </ul>
+    </div>
+
+
+
+    <!-- Back Button -->
+    <nav class="back-nav">
+        <a href="portfolio.html" class="back-button">Back to Portfolio</a>
+    </nav>
+
+    <!-- Case Study Section -->
+    <section class="case-study">
+        <img src="img/jotsheroimage.png" alt="Main Case Study Image" class="main-image">
+        <h1 class="case-study-title">Jots App </h1>
+        <h2>Redesigning the Jots App for Journaling</h2>
+       
+        <div class="case-study-content">
+            <h3>Overview</h3>
+            <p>Jots is a digital journaling app that aims to streamline how people capture their daily experiences through journaling. It was created in response to the problem that existing tools didn’t support a seamless integration of text, photos, and videos. This gap led to a disjointed journaling experience that distracts from being able to reflect on life events and emotions. This case study details Jots’ evolution—from initial concepts to multiple rounds of testing and final iterations, with a strong focus on iterating based on user feedback.</p>
+            <img src="img/journalexample.png" alt="Case Study Image 1" class="case-study-image">
+            <div class="section">
+                <h2>Background</h2>
+                <p>
+                    I started this project by reflecting on my personal struggles with traditional journaling.
+                </p>
+                <h4>Challenges Identified</h4>
+                <ul>
+                    <li><strong>Consistency:</strong> I’d lose momentum quickly, and the more days I missed, the more hesitant I was to start again.</li>
+                    <li><strong>Media Integration:</strong> Switching between different apps for photos, videos, and audio was tiring, highlighting the need for one fully integrated platform.</li>
+                    <li><strong>Emotional Barriers:</strong> Occasionally, the journaling process felt daunting due to self-criticism.</li>
+                </ul>
+                <p>
+                    To further understand these issues, I interviewed people who also journal regularly to uncover the struggles they face with the hobby. Their feedback informed a key feature I wanted Jots to implement.
+                </p>
+            </div>
+    
+            <div>
+                <h2>Initial Goals</h2>
+                <p>
+                    The goal of Jots was to create an app that offers more flexibility than traditional journaling tools, with features that inspire users to journal more effectively and consistently.
+                </p>
+            </div>
+    
+            <div>
+                <h2>Development</h2>
+                <p>
+                    In line with my goals for the project, I created wireflows and UI screens for Jots. A paper prototype was developed from these screens to test usability with real users. The usability test scenario required users to add a new image to the entry titled “Mia’s Birthday.” These tests revealed the following feedback points:
+                </p>
+
+                <img src="img/jotsprototype1.png" alt="Case Study Image 1" class="case-study-image">
+                <img src="img/jotswireframe.jpg" alt="Case Study Image 1" class="case-study-image">
+                <h3>Key Issues</h3>
+                <ul>
+                    <li><strong>Navigation Confusion:</strong> The “New Entry” page was unclear. Users struggled to find basic actions, and the “Add Journal” button caused additional confusion.</li>
+                    <li><strong>Terminology Issues:</strong> The term “Journal” meant different things to different people, leading to confusion over whether it referred to a new entry or the entire entry list.</li>
+                    <li><strong>Visual Clarity:</strong> Users described the UI as “soulless” and “unengaging.” The layout was too bland, and the hierarchy wasn’t clear enough to guide users’ attention.</li>
+                </ul>
+    
+                <h3>Design Solutions</h3>
+                <p>
+                    I took this feedback and made some necessary changes:
+                </p>
+                <ul>
+                    <li><strong>Icon and Label Updates:</strong> Replaced ambiguous terms like “Add Journal” with clearer labels such as “Add Text.”</li>
+                    <li><strong>Revised Visual Elements:</strong> Added colour and adjusted fonts to make the interface less sterile.</li>
+                    <li><strong>Mood Tracking Clarification:</strong> Rearranged and rephrased the mood tracking feature to make it clear that it was about logging emotions, not rating the quality of an entry.</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h2>Design and Testing Process</h2>
+                <h3>Testing & Iteration</h3>
+                <p><strong>1st Click Test</strong></p>
+                <p><em>Objective:</em> Check if users could easily find where to create a new journal entry.</p>
+                <p><em>Results:</em> 9 out of 10 users got it right on the first try, indicating that the primary navigation was solid.</p>
+    
+                <p><strong>5-Second Test</strong></p>
+                <p><em>Objective:</em> Capture first impressions and see how quickly users understood the purpose of key pages.</p>
+                <p><em>Pages Tested:</em></p>
+                <ul>
+                    <li><strong>“Mia’s Birthday” Page:</strong> Evaluated how clearly it communicated that it was a past entry.</li>
+                    <li><strong>New Entry Page:</strong> Checked if users understood the mood tracking feature.</li>
+                </ul>
+                <p><em>Results:</em> Users found the design functional but bland. There was confusion about mood tracking—many thought it was a rating system for the entry itself rather than a reflection on their emotions.</p>
+    
+                <h3>Key Changes Post-Testing</h3>
+                <ul>
+                    <li><strong>Improved Visual Interest:</strong> Introduced icons for different media types (text, photos, videos) to make the interface more visually stimulating.</li>
+                    <li><strong>Clarified Mood Tracking Purpose:</strong> Reworded descriptions and redesigned the layout to emphasize that it’s about tracking emotions, not rating entries.</li>
+                    <li><strong>Typography and Colour Adjustments:</strong> Increased contrast and changed font sizes to make the interface more readable.</li>
+                </ul>
+                <img src="img/jotsiteration.png" alt="Case Study Image 1" class="case-study-image">
+            </div>
+    
+            <div>
+                <h2>Final UI Screens</h2>
+                <ul>
+                    <li><strong>Homepage:</strong> Kept the homepage layout relatively unchanged since it received positive feedback for its simplicity and ease of use.</li>
+                    <li><strong>New Entry Page:</strong> Refined the layout and incorporated icons to improve usability. The goal was to make it immediately clear what options users had for creating new entries.</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h2>Conclusion</h2>
+                <p>
+                    Jots evolved significantly through iterative design and testing. Addressing confusing navigation, enhancing visual appeal, and refining terminology transformed the app into a more intuitive and engaging tool for journaling.
+                </p>
+                <h3>Impact on User Experience</h3>
+                <ul>
+                    <li><strong>Reduced Cognitive Load:</strong> Clearer labels and icons helped users grasp functionalities faster, reducing confusion and frustration.</li>
+                    <li><strong>Improved Visual Hierarchy:</strong> The updated typography and iconography made the app feel more welcoming and engaging, addressing the initial feedback of it being “soulless.”</li>
+                    <li><strong>Increased User Trust:</strong> The refined design made Jots feel more credible and reliable, which is critical for an app that handles personal data.</li>
+                </ul>
+            </div>
+    
+            <div>
+                <h2>Lessons Learned</h2>
+                <p>
+                    This project taught me the power of clear communication in UX design, both visually and verbally. Even small adjustments can create a huge difference in user perception and engagement. But most importantly, I learned that being receptive to feedback, no matter how harsh, is key to creating a product that people will actually want to use.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
+            <!-- LinkedIn Link -->
+            <a href="https://www.linkedin.com/in/alice-beyer-016377230/" target="_blank" class="social-link">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M22.225 0H1.775C.795 0 0 .795 0 1.775v20.45C0 23.205.795 24 1.775 24h20.45C23.205 24 24 23.205 24 22.225V1.775C24 .795 23.205 0 22.225 0zM7.1 20.452H3.75V9h3.35v11.452zm-1.675-13.064c-1.069 0-1.725-.735-1.725-1.65 0-.933.675-1.65 1.725-1.65s1.725.717 1.725 1.65c0 .915-.675 1.65-1.725 1.65zm15.477 13.064h-3.35v-5.5c0-1.314-.025-3.014-1.835-3.014-1.835 0-2.115 1.43-2.115 2.92v5.594h-3.35V9h3.215v1.57h.045c.445-.84 1.537-1.73 3.17-1.73 3.395 0 4.025 2.234 4.025 5.128v5.482h-.002z" fill="#000"/>
+                </svg>
+            </a>
+    
+            <!-- Instagram Link -->
+            <a href="https://www.instagram.com/alicebeyerdesign/" target="_blank" class="social-link">
+                <img src="img/instagram.png" alt="Instagram" width="35" height="35"/>
+            </a>
+        </div>
+        <p>&copy; 2024 Alice Beyer Design Portfolio</p>
+    </footer>
+    
