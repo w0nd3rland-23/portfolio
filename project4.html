@@ -16,6 +16,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -23,12 +24,14 @@
     <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
-        <ul>
-            
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
 <!-- Link Tree Navigation -->
@@ -57,16 +60,22 @@
 
             <h3>Development</h3>
             <p>This project allowed me to experiment with Adobe Illustrator's new AI vector tool, which I utilised to create basic shapes representing children and natural elements in the background. I customised these elements to align with the overall design aesthetic and the specific requirements outlined in the project brief.</p>
-            <p>Collaboration was a crucial aspect of this project. I worked closely with MAPh’s educational coordinator, Ingrid Wood, to ensure that the content aligned with the educational goals of the museum. Additionally, I sought advice from Fiona Arbab, a visiting master’s student specialising in early childhood education. This collaboration enriched the project by incorporating expert insights into child engagement.</p>
+            <p>Collaboration was a crucial aspect of this project. I worked closely with MAPh’s educational coordinator, Ingrid Wood, to ensure that the content aligned with the educational goals of the museum. Additionally, I sought advice from Fiona Arbab, a visiting master’s student specialising in early childhood education. This collaboration strengthened the project by incorporating experienced insights into child engagement.</p>
             <p>The initial iterations of the booklet required further refinement to ensure that activities were not only clear but also age-appropriate. Feedback from Ingrid and Fiona led to several design iterations, each focusing on enhancing clarity and fun.</p>
             <img src="img/maphbeforeandafter1.png" alt="Before-and-after examples of booklet pages" class="case-study-image">
             <img src="img/maphbeforeandafter2.png" alt="Before-and-after examples of booklet pages" class="case-study-image">
 
             <h3>Conclusion</h3>
-            <p>The Maph Children’s Sculpture Trail booklet is an example of how design can enhance educational experiences for children. Through careful research, collaboration, and iterative design processes, I was able to create an engaging resource that supports the museum's educational initiatives. This project not only allowed me to apply my design skills but also deepened my understanding of creating effective educational materials for children.</p>
+            <p>The Maph Children’s Sculpture Trail booklet was an enjoyable and fun project for me to be a part of. Through collaboration with the education department, and continued iteration on the booklet design, I was able to create an engaging resource that supports the museum's educational initiatives. As part of my roles at the gallery, I have been able to see children engaging with the booklet, helping them to fully explore the gallery and sculpture garden. Seeing the impact the booklet has had so far has been highly rewarding for me. </p>
         </div>
     </section>
-
+    <script> function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    }
+    
+    </script>
+    
     <footer class="footer">
         <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
             <!-- LinkedIn Link -->

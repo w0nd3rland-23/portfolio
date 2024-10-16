@@ -16,13 +16,15 @@
     <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
-
     <!-- Link Tree Navigation -->
     <nav class="link-tree-nav">
         <a href="portfolio.html" class="link-tree-item">Portfolio</a> &gt; 
@@ -31,47 +33,57 @@
 
     <!-- Case Study Section -->
     <section class="case-study">
-        <img src="img/qiflowapp.jpg" alt="QiFlow App Main Image" class="main-image">
+        <img src="img/qiflowhero.png" alt="QiFlow App Main Image" class="main-image">
         <h1 class="case-study-title">QiFlow App</h1>
         <div class="case-study-date"><strong>April 2024 - June 2024</strong></div> <!-- Date section -->
 
         <div class="case-study-content">
             <h3>Project Overview</h3>
-            <p>The QiFlow App project was developed as part of a collaborative effort aimed at providing a digital solution for individuals suffering from chronic pain. Our group, Otter’s Group, focused on designing a comprehensive e-health app that offers multimodal approaches to pain management, empowering users to improve their quality of life through consistent self-care routines. My key contributions centered around the development of the app's user interface, promotional materials, and research on the target audience.</p>
+            <p>The QiFlow App project was developed as part of a collaborative effort aimed at providing a digital solution for individuals suffering from chronic pain. Our group, Otter’s Group, focused on designing a comprehensive e-health app that offers multimodal approaches to pain management, empowering users to improve their quality of life through consistent self-care routines. My key contributions centered around the development of the app's user interface and research on the target audience.</p>
 
-            <h3>Problem Statement</h3>
-            <p>Chronic pain is a growing issue, affecting 3.4 million Australians as of 2024 (ABC News 2024). Chronic conditions such as fibromyalgia, lower back pain, and osteoarthritis severely impact the quality of life for many and have high social and economic costs. The need for accessible pain management solutions has grown due to limited access to specialized clinics, with only 2% of people with chronic pain utilizing such services. The QiFlow app aims to bridge this gap by offering accessible, home-based self-management techniques and educational resources for chronic pain sufferers.</p>
+            <h3>Problem</h3>
+            <p>Chronic pain is a growing issue, affecting 3.4 million Australians as of 2024. Chronic conditions such as fibromyalgia, lower back pain, and osteoarthritis severely impact the quality of life for many and have high social and economic costs. The need for accessible pain management solutions has grown due to limited access to specialised clinics, with only 2% of people with chronic pain utilising such services. The QiFlow app aims to bridge this gap by offering accessible, home-based self-management techniques and educational resources for chronic pain sufferers.</p>
 
             <h3>Target Audience Analysis</h3>
-            <p>The primary audience for QiFlow includes individuals aged 55 to 65+ years who are focused on improving self-management of pain. These individuals are self-motivated, technologically capable, and prepared to take an active role in managing their pain conditions.</p>
-            <h4>Key insights:</h4>
-            <ul>
-                <li>Chronic pain is projected to increase to affect over 800 million people by 2050 (Kolling Institute).</li>
-                <li>Current treatment and management options are costly, with an estimated economic burden of $215.6 billion annually by 2050 (Grand View Research 2022).</li>
-                <li>98% of individuals with chronic pain have not attended specialized pain clinics, highlighting a gap in access to effective pain management resources.</li>
-            </ul>
-
+            <p>The primary audience for QiFlow includes individuals aged 55 to 65+ years who are focused on improving self-management of pain. These individuals are self-motivated and prepared to take an active role in managing their pain conditions.</p>
+     
             <h3>Solution: QiFlow App Design</h3>
             <p>The QiFlow app offers a holistic approach to pain management through the following features:</p>
             <ul>
                 <li><strong>Educational Resources:</strong> Videos and blog posts that provide information on pain management techniques, therapeutic exercises, and lifestyle tips.</li>
-                <li><strong>Motivational Elements:</strong> Encouraging self-assessment and progress tracking through a built-in pain scale and motivational prompts.</li>
+                <li><strong>Motivational Elements:</strong> Encouraging self-assessment and progress tracking through a built-in pain scale.</li>
                 <li><strong>Distraction Techniques:</strong> Content focused on helping users shift attention away from pain through guided meditations, relaxing visualizations, and creative activities.</li>
-                <li><strong>TV Casting Capabilities:</strong> The app allows users to cast instructional videos and exercises to a TV screen for a more engaging experience.</li>
+                <li><strong>TV Casting Capabilities:</strong> The app allows users to cast instructional videos and exercises to a TV screen for a more engaging experience in Qi Gong. This incorporates AR technology, to give feedback to users on their Qi Gong practice.</li>
             </ul>
 
-            <h3>My Contributions</h3>
-            <h4>1. UI Design and Development</h4>
-            <p>Developed the UI for the user-facing elements of the QiFlow app using Figma. Created a consistent visual language that aligns with the calming and therapeutic goals of the app. Used soothing color palettes and accessible typography to cater to our target demographic. Implemented feedback from usability testing sessions to iterate on the UI, ensuring that navigation is intuitive and user flows are optimized.</p>
+            <img src="img/QIFINALFRAME1-01.png" alt="Cover design or layout of the booklet" class="case-study-image">
 
+
+            <h3>UI Design and Development</h3>
+          
+                    <ul>
+                        <li>Designed the user interface for the QiFlow app using Figma, focusing on user-facing elements.</li>
+                        <li>Created a consistent visual language that reflects the calming and therapeutic objectives of the app.</li>
+                        <li>Used soothing coloUr palettes and accessible typography to meet the needs of our target demographic.</li>
+                    </ul>
+
+                    <img src="img/QIFINALFRAME2-01.png" alt="Cover design or layout of the booklet" class="case-study-image">
+
+           
             <h3>Key Takeaways</h3>
-            <p>This project reinforced the importance of understanding the specific needs of a target audience when designing digital health solutions. Through thorough research and empathy-building activities, we identified key motivations and barriers faced by chronic pain sufferers. Developing a user-friendly interface for this demographic required careful consideration of accessibility principles, visual hierarchy, and interaction design.</p>
+            <p>This project was helpful in learning the importance of understanding specific needs of a target audience when designing digital health solutions. Through thorough research and empathy-building activities, we identified key motivations and barriers faced by chronic pain sufferers. Developing a user-friendly interface for this demographic required careful consideration of accessibility principles, visual hierarchy, and interaction design.</p>
 
             <h3>Conclusion</h3>
-            <p>The QiFlow app is an innovative digital tool that addresses the growing need for accessible pain management solutions. By incorporating user-centric design principles and leveraging AR technology, QiFlow empowers users to take an active role in managing their chronic pain conditions. This project provided me with valuable experience in UX design, research, and product development, creating a great opportunity for collaboration with my peers to design an app that could improve outcomes for vast numbers of people.</p>
+            <p>The QiFlow app is a digital tool that addresses the growing need for accessible pain management solutions. By incorporating user-centric design principles and leveraging AR technology, QiFlow empowers users to take an active role in managing their chronic pain conditions. This project provided me with valuable experience in UX design, research, and product development, as well a great opportunity for collaboration with my peers to design an app that could improve outcomes for vast numbers of people.</p>
         </div>
     </section>
-
+    <script> function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    }
+    
+    </script>
+    
     <footer class="footer">
         <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
             <!-- LinkedIn Link -->

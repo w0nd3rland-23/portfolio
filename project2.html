@@ -20,46 +20,69 @@
 
        <!-- Navbar -->
        <div class="navbar">
-        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div> <!-- Name added here -->
-        <ul>
-           
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
 
 
-    <!-- Back Button -->
-    <nav class="back-nav">
-        <a href="portfolio.html" class="back-button">Back to Portfolio</a>
-    </nav>
-
+<!-- Link Tree Navigation -->
+<nav class="link-tree-nav">
+    <a href="portfolio.html" class="link-tree-item">Portfolio</a> &gt; 
+    <a href="#" class="link-tree-item">Jots App</a>
+</nav>
     <!-- Case Study Section -->
     <section class="case-study">
         <img src="img/jotsheroimage.png" alt="Main Case Study Image" class="main-image">
         <h1 class="case-study-title">Jots App </h1>
-        <h2>Redesigning the Jots App for Journaling</h2>
+        <h2>Designing the Jots App for Journaling</h2>
+        <div class="case-study-date"><strong>March 2023 - June 2023</strong></div> <!-- Date section -->
+
        
         <div class="case-study-content">
             <h3>Overview</h3>
-            <p>Jots is a digital journaling app that aims to streamline how people capture their daily experiences through journaling. It was created in response to the problem that existing tools didn’t support a seamless integration of text, photos, and videos. This gap led to a disjointed journaling experience that distracts from being able to reflect on life events and emotions. This case study details Jots’ evolution—from initial concepts to multiple rounds of testing and final iterations, with a strong focus on iterating based on user feedback.</p>
+            <p>Jots is a digital journaling app that aims to improve how people capture their daily experiences through journaling. It was created in response to the problem that existing tools didn’t support a seamless integration of text, photos, and videos. This led to a disjointed journaling experience that detracts from being able to reflect on events and emotions. This case study details Jots’ app creation from initial concepts to rounds of user testing and final iterations, with a focus on iterating based on user feedback.</p>
             <img src="img/journalexample.png" alt="Case Study Image 1" class="case-study-image">
             <div class="section">
                 <h2>Background</h2>
                 <p>
-                    I started this project by reflecting on my personal struggles with traditional journaling.
+                    I started this project by reflecting on my personal struggles with traditional journaling, being asked to find a task that could be improved through an online application.
                 </p>
                 <h4>Challenges Identified</h4>
                 <ul>
-                    <li><strong>Consistency:</strong> I’d lose momentum quickly, and the more days I missed, the more hesitant I was to start again.</li>
-                    <li><strong>Media Integration:</strong> Switching between different apps for photos, videos, and audio was tiring, highlighting the need for one fully integrated platform.</li>
-                    <li><strong>Emotional Barriers:</strong> Occasionally, the journaling process felt daunting due to self-criticism.</li>
+                    <li><strong>Consistency:</strong> I’d lose motivation to journal often, and the more days I missed, the more difficult it felt to start again. </li>
+                    <li><strong>Media Integration:</strong> I wanted to be able to integrate multiple media types to create visually interesting journalling spreads, however, switching between different apps for photos, videos, and audio was tiring. </li>
+                    <li><strong>Emotional Barriers:</strong> Occasionally, the journalling process felt difficult to start due to self-criticism.</li>
                 </ul>
                 <p>
-                    To further understand these issues, I interviewed people who also journal regularly to uncover the struggles they face with the hobby. Their feedback informed a key feature I wanted Jots to implement.
+                    To further understand these issues, I interviewed two people who also journal regularly to uncover the struggles they face with the hobby, and features that they would find helpful in a journalling app.
                 </p>
+
+                <h4>Key Insights</h4>
+    <ul>
+        <li>
+            <strong>Tools and Mediums:</strong> Both interviewees used a combination of physical and digital tools (sketchbooks, notes apps) for journaling, showing a need for flexibility in journaling apps to accommodate different media types.
+        </li>
+        <li>
+            <strong>Motivation and Struggles:</strong> A common challenge for both participants was consistency and motivation. They both found journaling beneficial but found it required a mental effort to start.
+        </li>
+        <li>
+            <strong>Emotional Impact:</strong> Both interviewees stated that journaling helps them process emotions, making them feel accomplished or lighter afterwards. One found that sharing their journals with loved ones helped them communicate their feelings.
+        </li>
+        <li>
+            <strong>Time and Place:</strong> Journaling was often completed in the evening, in bed or at home, taking anywhere from 10 to 30 minutes, and done inconsistently.
+        </li>
+    </ul>
+
+    <img src="img/jotsuserjourney.png" alt="Case Study Image 1" class="case-study-image">
+
             </div>
     
             <div>
@@ -76,18 +99,34 @@
                 </p>
 
                 <img src="img/jotsprototype1.png" alt="Case Study Image 1" class="case-study-image">
-                <img src="img/jotswireframe.jpg" alt="Case Study Image 1" class="case-study-image">
-                <h3>Key Issues</h3>
+
+                <h4>Test Results</h4>
+    <ul>
+        <li>
+            <strong>Test 1:</strong> My participant did not complete the task successfully; however, they were able to make a new entry, adding the picture.
+        </li>
+        <li>
+            <strong>Test 2:</strong> The participant first went to make a new entry as opposed to the “Mia’s Entry” option. They did complete the task successfully after a few tries.
+        </li>
+    </ul>
+
+    <p>These tests showed the confusion that occurred for users with the + button on the navigation bar, giving me an indication that this needed to be developed further.</p>
+        <p>In response to my first tests, I iterated the wireflow as seen below. These updated wireframes were then tested with different participants.</p>        
+    <img src="img/jotswireframe.jpg" alt="Case Study Image 1" class="case-study-image">
+                <h3>Test Results</h3>
                 <ul>
                     <li><strong>Navigation Confusion:</strong> The “New Entry” page was unclear. Users struggled to find basic actions, and the “Add Journal” button caused additional confusion.</li>
                     <li><strong>Terminology Issues:</strong> The term “Journal” meant different things to different people, leading to confusion over whether it referred to a new entry or the entire entry list.</li>
-                    <li><strong>Visual Clarity:</strong> Users described the UI as “soulless” and “unengaging.” The layout was too bland, and the hierarchy wasn’t clear enough to guide users’ attention.</li>
+                
                 </ul>
     
                 <h3>Design Solutions</h3>
                 <p>
                     I took this feedback and made some necessary changes:
                 </p>
+
+                <img src="img/jotsiteration.png" alt="Case Study Image 1" class="case-study-image">
+
                 <ul>
                     <li><strong>Icon and Label Updates:</strong> Replaced ambiguous terms like “Add Journal” with clearer labels such as “Add Text.”</li>
                     <li><strong>Revised Visual Elements:</strong> Added colour and adjusted fonts to make the interface less sterile.</li>
@@ -96,8 +135,8 @@
             </div>
     
             <div>
-                <h2>Design and Testing Process</h2>
-                <h3>Testing & Iteration</h3>
+                <h3>Design and Testing Process</h3>
+            
                 <p><strong>1st Click Test</strong></p>
                 <p><em>Objective:</em> Check if users could easily find where to create a new journal entry.</p>
                 <p><em>Results:</em> 9 out of 10 users got it right on the first try, indicating that the primary navigation was solid.</p>
@@ -111,15 +150,10 @@
                 </ul>
                 <p><em>Results:</em> Users found the design functional but bland. There was confusion about mood tracking—many thought it was a rating system for the entry itself rather than a reflection on their emotions.</p>
     
-                <h3>Key Changes Post-Testing</h3>
-                <ul>
-                    <li><strong>Improved Visual Interest:</strong> Introduced icons for different media types (text, photos, videos) to make the interface more visually stimulating.</li>
-                    <li><strong>Clarified Mood Tracking Purpose:</strong> Reworded descriptions and redesigned the layout to emphasize that it’s about tracking emotions, not rating entries.</li>
-                    <li><strong>Typography and Colour Adjustments:</strong> Increased contrast and changed font sizes to make the interface more readable.</li>
-                </ul>
-                <img src="img/jotsiteration.png" alt="Case Study Image 1" class="case-study-image">
+             
             </div>
-    
+            <img src="img/Jots Deb-01.png" alt="Case Study Image 1" class="case-study-image">
+
             <div>
                 <h2>Final UI Screens</h2>
                 <ul>
@@ -129,26 +163,28 @@
             </div>
     
             <div>
-                <h2>Conclusion</h2>
-                <p>
-                    Jots evolved significantly through iterative design and testing. Addressing confusing navigation, enhancing visual appeal, and refining terminology transformed the app into a more intuitive and engaging tool for journaling.
-                </p>
+                
                 <h3>Impact on User Experience</h3>
                 <ul>
                     <li><strong>Reduced Cognitive Load:</strong> Clearer labels and icons helped users grasp functionalities faster, reducing confusion and frustration.</li>
                     <li><strong>Improved Visual Hierarchy:</strong> The updated typography and iconography made the app feel more welcoming and engaging, addressing the initial feedback of it being “soulless.”</li>
                     <li><strong>Increased User Trust:</strong> The refined design made Jots feel more credible and reliable, which is critical for an app that handles personal data.</li>
                 </ul>
-            </div>
-    
-            <div>
-                <h2>Lessons Learned</h2>
+                <h2>Conclusion</h2>
                 <p>
-                    This project taught me the power of clear communication in UX design, both visually and verbally. Even small adjustments can create a huge difference in user perception and engagement. But most importantly, I learned that being receptive to feedback, no matter how harsh, is key to creating a product that people will actually want to use.
+                    Jots evolved significantly through iterative design and testing. Addressing confusing navigation, enhancing visual appeal, and refining terminology transformed the app into a more intuitive and engaging tool for journaling.
                 </p>
+             
             </div>
+
         </div>
     </section>
+    <script> function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    }
+    
+    </script>
 
     <footer class="footer">
         <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">

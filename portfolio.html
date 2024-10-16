@@ -19,44 +19,50 @@
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div> <!-- Name added here -->
-        <ul>
-         
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- Portfolio List Section -->
     <section class="portfolio">
-        <h2></h2>
+        
         <div class="project-grid">
 
             <a href="project1.html" class="project-link">
                 <div class="project">
                     <img src="img/scapehero.png" alt="Project 1">
+
                     <h3>Scape Portal App</h3>
                     <p>A research-driven project designing an app suitable for student living communications. </p>
-                    <div class="project-description-bubble">Mobile App Design</div> <div class="project-description-bubble">User Research</div> <!-- Static bubble -->
+                    <div class="project-description-bubble">Mobile App Design</div> <div class="project-description-bubble">User Testing</div><div class="project-description-bubble">User Research</div> <!-- Static bubble -->
+
                 </div>
             </a>
 
             <a href="project2.html" class="project-link">
                 <div class="project">
                     <img src="img/jotsheroimage.png" alt="Project 3">
-                    
+                
                     <h3>Jots App</h3>
-                    <p>A UX-focused project on enhancing journaling through improved media integration and developing user-friendly interfaces.</p>
+                    <p>A UX-focused project on enhancing journalling experiences online.</p>
                     <div class="project-description-bubble">UX/UI Mobile App Design</div><div class="project-description-bubble">User Testing</div> 
+
                 </div>
             </a>
             <a href="project3.html" class="project-link">
                 <div class="project">
                     <img src="img/qiflowhero.png" alt="Project 2">
-                    <div class="project-description-bubble">UI Mobile App Design</div><div class="project-description-bubble">Mobile App Design</div>
                     <h3>Qi Flow App</h3>
                     <p>A collaborative project designing a Qi Gong inspired app UI to improve chronic pain management</p>
+                    <div class="project-description-bubble">UI Mobile App Design</div><div class="project-description-bubble">Mobile App Design</div>
+
                 </div>
             </a>
             <!-- Add more projects as needed -->
@@ -64,15 +70,22 @@
             <a href="project4.html" class="project-link">
                 <div class="project">
                     <img src="img/tempmaph1.jpg" alt="Project 4">
-                    <div class="project-description-bubble">Graphic Design</div>
                     <h3>Museum of Australian Photography Sculpture Trail</h3>
-                    <p>An illustrative design project worked on for the Musuem of Australian Photography 2024 education program.</p>
+                    <p>An illustrative design project created for the education program at the Musuem of Australian Photography</p>
+                    <div class="project-description-bubble">Graphic Design</div>
+
                 </div>
             </a>
     
         </div>
     </section>
-
+    <script> function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    }
+    
+    </script>
+    
     <footer class="footer">
         <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
             <!-- LinkedIn Link -->

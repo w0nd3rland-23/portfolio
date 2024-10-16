@@ -14,49 +14,44 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <!-- Navbar -->
     <div class="navbar">
-        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div> <!-- Name added here -->
-        <ul>
-          
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
 
-    <section class="hero-content">
-        <img src="img/headshot1.png" alt="Alice Beyer Profile Picture"  class="headshot-image">
-        <div class="hero-text">
-            <h1>Hi, I'm Alice Beyer</h1>
-            <p>UX/UI Designer & Digital Media Enthusiast</p>
-        </div>
-    </section>
+  
+  
     <!-- About Section -->
     <section class="about">
         <h2>About Me</h2>
-        <p>
-           Hi, I'm Alice! I am currently a UX/UI design student at RMIT passionate about creating intuitive and aesthetically pleasing designs. 
-            With a background in the arts, graphic design and a keen interest in user experience, I strive to build products 
-            that delight users and solve real-world problems.
-        
-        </p>
-        <p>
-            My journey into design started with a love for art and technology. Over the years, I have honed my skills 
-            in various design tools and methodologies, allowing me to create effective and engaging user experiences.
-        </p>
+        <div class="about-content">
+            <img src="img/headshot1.png" alt="Alice Beyer Profile Picture" class="headshot-image-about">
+            <div class="about-text">
+                <p> <strong>Alice is a digital media design student at RMIT in Melbourne, specialising in UX/UI design.</strong> Her passion for design is driven by a desire to create accessible, intuitive experiences that foster inclusive online communities. With 4 years of experience in the arts industry, she brings a creative, user-centered perspective to her design process, aiming to create work that is visually engaging and meaningful for diverse audiences. </p> <p> Often dubbed the unofficial tech support for her family, she has witnessed the frustration and stress caused by unintuitive interfaces. This experience has fueled her passion for understanding how these problems can be solved in an increasingly digital world and highlighted the importance of creating meaningful and accessible online experiences. </p>
+
+            </div>
+        </div>
     </section>
 
     <!-- Timeline Section -->
     <section class="timeline">
         <h2>My Journey So Far</h2>
         <ul>
-            <li><strong>2023-Present:</strong> Started working at Museum of Australian Photography</li>
-            <li><strong>2022-2025:</strong> Bachelor of Design (Digital Media) at RMIT</li>
+            <li><strong>2023 — Present:</strong> Gallery Assistant at the Museum of Australian Photography</li>
+            <li><strong>2022 — 2025:</strong> Bachelor of Design (Digital Media) at RMIT</li>
             <li><strong>2021:</strong> Obtained Certificate III in Business</li>
             <li><strong>2021:</strong> Arts and Culture Traineeship at the Gippsland Art Gallery</li>
         </ul>
@@ -64,12 +59,19 @@
 
     <section class="cta">
         <h2>Let's Collaborate</h2>
-        <p>Ready to bring your vision to life? Explore my work or reach out to discuss potential collaborations and opportunities.</p>
+        <p>Explore my work or reach out to discuss potential collaborations and opportunities.</p>
         <div class="cta-buttons">
             <a href="portfolio.html" class="btn">View Portfolio</a>
             <a href="contact.html" class="btn">Contact Me</a>
         </div>
     </section>
+
+    <script> function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    }
+    
+    </script>
     
     <footer class="footer">
         <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
@@ -85,6 +87,7 @@
                 <img src="img/instagram.png" alt="Instagram" width="35" height="35"/>
             </a>
         </div>
+        <br>
         <p>&copy; 2024 Alice Beyer Design Portfolio</p>
     </footer>
     

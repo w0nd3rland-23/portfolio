@@ -21,34 +21,39 @@
     <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
-        <ul>
-        
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
-    <!-- Back Button -->
-    <nav class="back-nav">
-        <a href="portfolio.html" class="back-button">Back to Portfolio</a>
-    </nav>
+<!-- Link Tree Navigation -->
+<nav class="link-tree-nav">
+    <a href="portfolio.html" class="link-tree-item">Portfolio</a> &gt; 
+    <a href="#" class="link-tree-item">Scape Portal </a>
+</nav>
 
     <!-- Case Study Section -->
     <section class="case-study">
         <img src="img/scapehero.png" alt="Main Case Study Image" class="main-image">
         <h1 class="case-study-title">Scape Portal</h1>
         <h2>Improving Communication in Student Accommodation</h2>
+        <div class="case-study-date"><strong>March 2023 - June 2023</strong></div> <!-- Date section -->
+
 
         <div class="case-study-content">
             <h3>Overview</h3>
-            <p>Purpose-built student accommodation (PBSA) creates unique neighborhood communities for students at universities in Australia. This investigation focused on exploring the communication dynamics, relationships, and discourse that exist within these communities, particularly among residents at Scape La Trobe in Melbourne’s CBD.</p>
+            <p>Purpose-built student accommodation (PBSA) creates unique neighbourhood communities for students at universities in Australia. This project focused on exploring the communication dynamics, relationships, and discourse that exist within these communities, with research taking place at Scape La Trobe in Melbourne’s CBD.</p>
 
             <h3>Problem</h3>
-            <p>Exploratory research interviews revealed significant issues within the Scape community regarding the efficiency of management-resident communication, leading to unresolved maintenance problems. To address this challenge, an online solution was necessary to streamline the process of reporting building issues to management.</p>
+            <p>Exploratory research interviews revealed significant issues within the Scape community regarding the efficiency of management-resident communication, leading to unresolved maintenance problems. To address this challenge, an online solution was necessary to streamline the process of reporting building issues to management. Another key issue was the communication between residents in shared apartments, with cleaning issues being identified as a main problem for residents.</p>
             <img src="img/scapeprojectstages.png" alt="Case Study Image 1" class="case-study-image">
             <h3>Solution</h3>
-            <p>A crucial aspect of my solution for the Scape community was to enhance the system for reporting maintenance issues within the apartments. I developed a dedicated building page within the Scape Portal app to facilitate more efficient communication between residents and management regarding building problems.</p>
+            <p>To solve the issues for residents at Scape La Trobe in Melbourne, my solution involved an enhanced system for reporting maintenance issues within the apartments. I developed a dedicated building page within the Scape Portal app to facilitate more efficient communication between residents and management regarding building problems.</p>
 
             <h3>Interviews</h3>
             <p>I conducted five interviews with members of the Scape La Trobe community. The questions focused on various topics, including communication, management, cleaning, background history, and major challenges faced while living in the community.</p>
@@ -57,27 +62,23 @@
                 <li>Layout concerns</li>
                 <li>Cost-related issues</li>
                 <li>Maintenance problems</li>
+                <li>Cleanliness problems</li>
             </ul>
             <img src="img/scapeissues.png" alt="Case Study Image 1" class="case-study-image">
 
-            <h4>Key Points:</h4>
-            <ul>
-                <li>Lack of community engagement</li>
-                <li>Unresolved maintenance issues</li>
-                <li>Differing opinions on cleaning practices</li>
-            </ul>
-            <p>Out of the four main problems residents identified, three participants specifically highlighted building maintenance issues, making this the focal point of my solution.</p>
+        
+            <p>Residents spoke about problems with not feeling involved with the community due to not knowing about events, and because of the layout of the building. Some also spoke of frustrations with the apartments cleanliness. Out of the four main problems residents identified, three participants specifically highlighted building maintenance issues, making this the focal point of my solution.</p>
 
             <h3>Competitor Analysis</h3>
-            <p>The current system used by Scape for resident maintenance inquiries is Starrez Housing. A competitor analysis revealed several shortcomings within this platform, which provided valuable context for the issues discovered during the interviews. Key problems included:</p>
+            <p>The current system used by Scape for resident maintenance inquiries is Starrez Housing. A competitor analysis revealed several issues within this platform, which provided context for the issues discovered during the interviews. Key problems included:</p>
             <ul>
-                <li>Complicated navigation with pages overloaded with information</li>
+                <li>Complicated navigation with pages holding too much information</li>
                 <li>Inability to easily follow up on unresolved maintenance requests, as the system displayed both current and past requests together</li>
             </ul>
 
             <h3>User Flow</h3>
 
-            <p>The existing user flow for residents to address maintenance issues was cumbersome. Scape Portal aims to offer a more efficient method for residents, particularly when initial management responses fail to resolve their issues.</p>
+            <p>The existing user flow for residents to address maintenance issues was difficult for users to naviagte and successfully resolve maintenance problems. Scape Portal aims to offer a more efficient method for residents, particularly when initial management responses fail to resolve their issues. Below is the user flow for Scape Portal.</p>
             <img src="img/scapeuserflow.jpg" alt="Case Study Image 1" class="case-study-image">
 
             <h3>Design Iterations</h3>
@@ -85,30 +86,38 @@
             <p>The first iteration of high-fidelity mockups featured a color palette of teal and pink, aligned with Scape’s branding. Low and medium-fidelity mockups were developed in response to the insights gathered from interviews and analysis. One critical aspect I focused on was clearly communicating the visibility status of the maintenance page.</p>
             
             <img src="img/scape.png" alt="Case Study Image 1" class="case-study-image">
-            <p>The solution I tested incorporated a UI with a higher contrast color palette than previous iterations.</p>
-            <img src="img/scapefinal.png" alt="Case Study Image 1" class="case-study-image">
             <h3>Solution Impact</h3>
 
             <h4>Participatory Walkthrough and SEQ</h4>
-            <p>To evaluate my solution, I conducted a participatory walkthrough with the task: “In this app, find your current building maintenance requests to check the completion status of the ‘Kitchen Oven Light Not Working’ request.” Four tests were conducted, yielding an average System Usability Scale (SEQ) score of 5.5/7.</p>
-            <p>Common Issues: Users frequently attempted to complete the task through the chat feature, and some found the dashboard confusing, as they were looking for notifications related to maintenance. Overall, participants completed the task effectively, rating its difficulty between 5 and 6 out of 7 on the SEQ.</p>
+            <p>To evaluate my solution, I conducted a participatory walkthrough with the task: “In this app, find your current building maintenance requests to check the completion status of the ‘Kitchen Oven Light Not Working’ request.” Four tests were conducted, resulting in an average System Usability Scale (SEQ) score of 5.5/7.</p>
+            <p>Common Issues: Users frequently attempted to complete the task through the chat feature, and some found the dashboard confusing, as they were looking for notifications related to maintenance. Overall, participants completed the task effectively, however, there is room for further development.</p>
             
             <h4>5-Second Test</h4>
 
-            <p>A 5-second test was conducted on the homepage to gauge whether the design concept effectively conveyed a product for managing building communication. Most of the seven participants recognized the app's purpose related to building management, but the visual design raised concerns.</p>
+            <p>A 5-second test was conducted on the homepage to test whether the design effectively conveyed a product for managing building communication. Most of the seven participants recognized the app's purpose related to building management, but the visual design raised concerns.</p>
             <p>Participants noted that the design did not seem trustworthy, and they struggled to identify notifications or events from their recollections of the page.</p>
             
             <h4>Tree Test</h4>
 
-            <p>A tree test was performed to evaluate the navigational structure of Scape Portal. For the maintenance navigation, a successful rate of 83% was recorded when six participants were asked, “Where would you find active maintenance requests in your apartment?”</p>
+            <p>A tree test was performed to evaluate the navigational structure of Scape Portal. For the maintenance navigation, a successful rate of 83% was recorded when six participants were asked, “Where would you find active maintenance requests in your apartment?” The results of the test were mostly succesful, with the following statistics being recorded.</p>
             <p>Overall Directness: 8/10</p>
             <p>Task Score: 83% success rate</p>
 
             <h3>Final Solution</h3>
             <p>In response to the testing feedback, I made final iterations to Scape Portal, particularly addressing the design challenges identified in the 5-second test. These refinements aim to create a more intuitive and trustworthy user experience that meets the needs of the Scape community.</p>
+            <p>This involved developing a UI with a higher contrast color palette than previous iterations, as seen below.</p>
+            <img src="img/scapefinal.png" alt="Case Study Image 1" class="case-study-image">
+
         </div>
     </section>
 
+    <script> function toggleNav() {
+        const navLinks = document.querySelector('.nav-links');
+        navLinks.classList.toggle('active'); // Toggle the 'active' class
+    }
+    
+    </script>
+    
     <footer class="footer">
         <div class="social-icons" style="display: flex; align-items: center; gap: 15px;">
             <!-- LinkedIn Link -->

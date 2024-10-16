@@ -16,11 +16,14 @@
     <!-- Navbar -->
     <div class="navbar">
         <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
-        <ul>
-            <li><a href="about.html">About</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html" class="contact-btn">Contact</a></li>
-        </ul>
+        <button class="toggle-button" onclick="toggleNav()">☰</button>
+        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html" class="contact-btn">Contact</a></li>
+            </ul>
+        </div>
     </div>
 
     <!-- Contact Section -->
@@ -77,6 +80,12 @@
             });
         });
     </script>
+<script> function toggleNav() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active'); // Toggle the 'active' class
+}
+
+</script>
 
     <!-- Footer -->
     <footer class="footer">
