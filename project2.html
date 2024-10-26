@@ -22,7 +22,7 @@
        <div class="navbar">
         <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
         <button class="toggle-button" onclick="toggleNav()">☰</button>
-        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+        <div class="nav-links"> 
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -43,7 +43,7 @@
         <img src="img/jotsheroimage.png" alt="Main Case Study Image" class="main-image">
         <h1 class="case-study-title">Jots App </h1>
         <h2>Designing the Jots App for Journaling</h2>
-        <div class="case-study-date"><strong>March 2023 - June 2023</strong></div> <!-- Date section -->
+        <div class="case-study-date"><strong>March 2023 - June 2023</strong></div> 
 
        
         <div class="case-study-content">
@@ -179,9 +179,39 @@
 
         </div>
     </section>
+
+    <!-- Projects Section -->
+<section class="projects1">
+    <div class="projects-header">
+        <h1 class="projects-title">More Projects</h1>
+    </div>
+
+    <div class="project-grid compact-grid">
+        <a href="project1.html" class="project-link">
+            <div class="project">
+                <img src="img/scapehero.png" alt="Project 1">
+                <h3>Scape Portal App</h3>
+            </div>
+        </a>
+      
+        <a href="project3.html" class="project-link">
+            <div class="project">
+                <img src="img/qiflowhero.png" alt="Project 2">
+                <h3>Qi Flow App</h3>
+            </div>
+        </a>
+        <a href="project4.html" class="project-link">
+            <div class="project">
+                <img src="img/tempmaph1.jpg" alt="Project 4">
+                <h3>MAPh Sculpture Trail</h3>
+            </div>
+        </a>
+    </div>
+</section>
+
     <script> function toggleNav() {
         const navLinks = document.querySelector('.nav-links');
-        navLinks.classList.toggle('active'); // Toggle the 'active' class
+        navLinks.classList.toggle('active'); 
     }
     
     </script>

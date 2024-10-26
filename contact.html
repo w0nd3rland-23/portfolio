@@ -17,7 +17,7 @@
     <div class="navbar">
         <div class="navbar-brand"><a href="index.html">ALICE BEYER</a></div>
         <button class="toggle-button" onclick="toggleNav()">☰</button>
-        <div class="nav-links"> <!-- Ensure this wrapper is added -->
+        <div class="nav-links"> 
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="portfolio.html">Portfolio</a></li>
@@ -53,7 +53,7 @@
     <!-- EmailJS Initialization -->
     <script type="text/javascript">
         (function() {
-            emailjs.init("PYg_YhfZWLKNq8aIm"); // Replace 'public_PYg_YhfZWLKNq8aIm' with your Public Key
+            emailjs.init("PYg_YhfZWLKNq8aIm"); 
         })();
     </script>
 
@@ -65,13 +65,12 @@
             form.addEventListener('submit', function(event) {
                 event.preventDefault();
 
-                // Use EmailJS to send the form data
+            
                 emailjs.sendForm('service_qk5cgi8', 'template_uirpsgr', this)
                     .then(function(response) {
                         alert('Message sent successfully!');
                         console.log('SUCCESS!', response.status, response.text);
 
-                        // Clear the form after successful submission
                         form.reset();
                     }, function(error) {
                         alert('Failed to send the message. Please try again.');
@@ -82,7 +81,7 @@
     </script>
 <script> function toggleNav() {
     const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active'); // Toggle the 'active' class
+    navLinks.classList.toggle('active'); 
 }
 
 </script>
