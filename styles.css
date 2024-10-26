@@ -447,12 +447,20 @@ ul, li {
 .about-content {
     display: flex;          /* Use flexbox */
   /* Align items vertically */
-  
+
+  flex-direction: row;
     text-align: left;
     max-width: 900px;
     margin: 3rem auto;
 }
 
+
+@media (max-width: 768px) {
+    .about-content, .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 .about-text {
     max-width: 700px;  
     margin: 0 auto;    /* Optional: limit the width of the text container */
